@@ -2,8 +2,6 @@
 
 _- Cours Spring : context, beans, components_
 
-_- Exercices d'applications sur Spring_
-
 _- Services et controller Spring_
 
 _- Respository_
