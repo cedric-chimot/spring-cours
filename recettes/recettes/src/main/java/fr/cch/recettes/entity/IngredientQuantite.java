@@ -14,7 +14,7 @@ public class IngredientQuantite {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idQuantite")
-    private int id;
+    private Long id;
 
     @Column(name = "quantite_ingredient")
     private int quantite;
@@ -27,7 +27,7 @@ public class IngredientQuantite {
     @JoinColumn(name = "id_recette")
     private Recette recettes;
 
-    public IngredientQuantite(int id, int quantite) {
+    public IngredientQuantite(Long id, int quantite) {
         this.id = id;
         this.quantite = quantite;
     }

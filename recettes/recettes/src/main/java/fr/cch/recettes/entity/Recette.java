@@ -16,7 +16,7 @@ public class Recette {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idRecette")
-    private int id;
+    private Long id;
 
     @Column(name = "nomRecette")
     private String nom;
@@ -35,7 +35,7 @@ public class Recette {
     )
     private List<Categorie> categories;
 
-    public Recette(int id, String nom, String description) {
+    public Recette(Long id, String nom, String description) {
         this.id = id;
         this.nom = nom;
         this.description = description;
